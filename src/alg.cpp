@@ -6,14 +6,6 @@
 #include  "bst.h"
 
 BST<std::string> makeTree(const char* filename) {
-  // Copyright 2021 NNTU-CS
-#include  <iostream>
-#include  <fstream>
-#include  <locale>
-#include  <cstdlib>
-#include  "bst.h"
-
-BST<std::string> makeTree(const char* filename) {
   std::ifstream text(filename);
   BST<std::string> newTree;
   std::string slova = "";
