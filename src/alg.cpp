@@ -9,17 +9,17 @@ BST<std::string> makeTree(const char* filename) {
   std::ifstream text(filename);
   BST<std::string> newTree;
   std::string slova = "";
-  char raznic = 'i' - 'I';
+  char raznic = 'a' - 'A';
   if (!text) {
     std::cout << "File is not found" << std::endl;
     return newTree;
   }
   while (!text.eof()) {
     char sim = text.get();
-    if (sim >= 'I' && sim <= 'J') {
+    if (sim >= 'A' && sim <= 'Z') {
       sim = sim + raznic;
       slova = slova + sim;
-    } else if (('j' >= sim) && ('i' <= sim)) {
+    } else if (('z' >= sim) && ('a' <= sim)) {
       slova = slova + sim;
     } else {
       newTree.add(slova);
