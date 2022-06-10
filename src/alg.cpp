@@ -37,4 +37,3 @@ BST<std::string> makeTree(const char* filename) {
   text.close();
   return newTree;
 }
-}
